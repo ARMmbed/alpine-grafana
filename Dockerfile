@@ -46,7 +46,7 @@ RUN apk add --no-cache --update --virtual .build-deps \
    && rm -rf /go /tmp/* /var/cache/apk/* /root/.n* /etc/bin/phantomjs
    
 
-VOLUME ["/var/lib/grafana", "/var/log/grafana", "/etc/grafana"]
+VOLUME ["/var/log/grafana", "/etc/grafana"]
 EXPOSE 3000
 WORKDIR /etc/grafana/
 COPY ./docker-entrypoint.sh /
