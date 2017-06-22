@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-ENV GRAFANA_VERSION=4.3.2
+ENV GRAFANA_VERSION=v4.3.2
 
 RUN apk add --no-cache --update --virtual .build-deps \
         build-base git libffi-dev linux-headers mercurial nodejs pcre-dev \
